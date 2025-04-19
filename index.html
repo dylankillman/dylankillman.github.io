@@ -1,225 +1,142 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Dylan Killman - CS-499 Capstone ePortfolio</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-            background-color: #f9f9fb;
-            margin: 40px auto;
-            max-width: 960px;
-            line-height: 1.6;
-            padding: 0 20px;
-            color: #333;
-        }
-        h1 {
-            font-size: 2.5em;
-            font-weight: 700;
-            color: #003366;
-            text-align: center;
-        }
-        h2 {
-            text-align: center;
-            color: #222;
-            border-bottom: 2px solid #e0e0e0;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        h3, h4 {
-            text-align: center;
-            color: #333;
-        }
-        nav {
-            text-align: center;
-            margin: 30px 0;
-        }
-        nav a {
-            margin: 0 15px;
-            color: #0066cc;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        nav a:hover {
-            text-decoration: underline;
-            color: #003366;
-        }
-        section {
-            margin-top: 60px;
-        }
-        .card {
-            background: #fff;
-            padding: 30px;
-            margin: 30px 0;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            border-radius: 8px;
-        }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        iframe {
-            display: block;
-            margin: 20px auto;
-            width: 100%;
-            max-width: 720px;
-            height: 405px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Dylan Killman - CS-499 Capstone ePortfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #0d47a1, #1976d2);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    nav {
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0d47a1;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #1976d2;
+    }
+
+    section {
+      max-width: 960px;
+      margin: 60px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    h2, h3, h4 {
+      text-align: center;
+      color: #0d47a1;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    ul li {
+      display: inline-block;
+      margin: 10px;
+    }
+
+    a.button-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 16px;
+      background-color: #0d47a1;
+      color: white;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a.button-link:hover {
+      background-color: #1565c0;
+    }
+
+    iframe {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      border-radius: 6px;
+    }
+
+    img {
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .screenshot-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .screenshot-grid div {
+      text-align: center;
+    }
+
+    .screenshot-grid img {
+      max-width: 100%;
+      width: 300px;
+    }
+
+    .wide-screenshot-grid img {
+      width: 480px;
+    }
+  </style>
 </head>
-    
 <body>
 
+  <header>
     <h1>Dylan Killman</h1>
-    <p style="text-align:center;">CS-499 Computer Science Capstone ePortfolio</p>
+    <p>CS-499 Computer Science Capstone ePortfolio</p>
+  </header>
 
-    <nav>
-        <a href="#self-assessment">Self-Assessment</a>
-        <a href="#code-review">Code Review</a>
-        <a href="#enhancement-one">Enhancement 1</a>
-        <a href="#enhancement-two">Enhancement 2</a>
-        <a href="#enhancement-three">Enhancement 3</a>
-    </nav>
-
-    <section id="self-assessment">
-    <h2>Professional Self-Assessment</h2>
-
-        <p>
-            Completing the Computer Science program at Southern New Hampshire University, along with developing this ePortfolio, has been quite a journey for me. Throughout the program, I’ve had the opportunity to grow not only my technical skills, but also my confidence and focus. The coursework and hands-on projects that I worked on during this program have helped me refine my abilities and define my professional goals more clearly. Revisiting projects I completed earlier in the program and enhancing them with the knowledge and skills I gained later on in the program gave me a valuable opportunity to demonstrate my understanding of core computer science principles, including software and UI design, data structures, and databases.
-        </p>
-
-        <p>
-            Throughout the program, I’ve learned the value of collaboration in development environments, and I’ve been able to apply that every day at work as well. There were a couple of team-based assignments throughout the program, and these allowed me to learn how to contribute meaningfully within a group, communicate my ideas clearly, and support others via peer review and positive or negative feedback. I also often had peers review my code and projects, even when they weren’t developed in a group environment, in order to further foster my collaborative skills. These experiences prepared me to work in teams and communicate effectively with both technical partners, along with non-technical stakeholders like a customer for whom I’m developing a product. I’ve also honed my skills in creating documentation for my products, along with clear, maintainable code with clear comments to improve readability and allow for other professionals to easily update and modify my code.
-        </p>
-
-        <p>
-            My work with data structures and algorithms in this program deeply improved my problem-solving skills and allowed me to create more efficient solutions to problems. For example, in my data structures enhancement, I redesigned my CS-300 Course Planner product to utilize a binary search tree instead of a vector for data storage and traversal. This not only improved the execution time but also demonstrated my ability to analyze trade-offs when it comes to design decisions—balancing performance, efficiency, and maintainability. This is vital when it comes to building scalable products.
-        </p>
-
-        <p>
-            The software engineering and database-focused courses helped solidify my understanding of the software development process from start to finish. I learned how to apply object-oriented principles to the software development lifecycle and combine that with the use of tools and frameworks to create efficient and modular products. In one of the enhancements for this capstone, I completely refactored a mobile application to align with more modern UI design practices and improve the usability and visual appeal. In another artifact, I improved a MongoDB-based dashboard product by adding indexing, aggregation pipelines, and bulk insertion techniques, which improved both usability and overall performance.
-        </p>
-
-        <p>
-            Security was also a big part of this program. Because of this, I’ve been able to develop a mindset that anticipates vulnerabilities and incorporates proactive measures instead of standing back and reacting when a security breach or incident might happen. I’ve learned about and applied secure coding practices from the requirements phase all the way through development and rollout of the product. These practices include validating user input, applying the principle of least privilege, and understanding the risks of generally non-secure practices like unsafe data handling. Even though security wasn’t the central focus of all artifacts, I still approach every project paying special attention to security.
-        </p>
-
-        <p>
-            Altogether, I feel that the enhancements that are included in this portfolio represent a full picture of my skills and growth as a developer throughout this program. Each artifact highlights different strengths—software engineering through user-centric designs, data optimization through more efficient data structures, and database fluency through performance tuning. These not only demonstrate my technical proficiency but also my ability to communicate and present my work in a coherent, professional manner.
-        </p>
-    </section>
-
-    <!-- Code Review Section -->
-    <section id="code-review">
-        <h2>Code Review</h2>
-        <p>This video provides a walkthrough of my original projects and outlines the planned enhancements.</p>
-        <iframe src="https://www.youtube.com/embed/HL48gVvQEnc" frameborder="0" allowfullscreen></iframe>
-    </section>
-
-    <!-- Enhancement One -->
-    <section id="enhancement-one">
-        <h2>Enhancement One: Software Design and Engineering</h2>
-        <p>
-            This enhancement showcases the original and improved versions of my Weight Tracker app from CS-360,
-            now rebranded as <strong>FitGoals</strong>. The changes emphasize consistent UI/UX, visual design,
-            and usability improvements.
-        </p>
-    
-        <ul>
-            <li><a href="enhancement-one/original/WeightTracker_original.zip">Download Original Artifact</a></li>
-            <li><a href="enhancement-one/enhanced/FitGoals_enhanced.zip">Download Enhanced Artifact</a></li>
-            <li><a href="enhancement-one/narrative/Enhancement One Narrative.docx">Download Narrative</a></li>
-        </ul>
-
-        <h3>Before and After Screenshots</h3>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
-            <div>
-                <h4 style="text-align:center;">Before</h4>
-                <img src="enhancement-one/images/dashbboard_ before.png" alt="Before UI" style="max-width: 100%; width: 300px; border: 1px solid #ccc;">
-            </div>
-            <div>
-                <h4 style="text-align:center;">After</h4>
-                <img src="enhancement-one/images/dashboard_new.png" alt="After UI" style="max-width: 100%; width: 300px; border: 1px solid #ccc;">
-            </div>
-        </div>
-    </section>
-
-    <!-- Enhancement Two -->
-    <section id="enhancement-two">
-        <h2>Enhancement Two: Algorithms and Data Structures</h2>
-        <p>
-            This enhancement demonstrates optimization in algorithmic efficiency and use of structured data through
-            the redesign of my Course Planner project originally developed in CS-300. By transitioning from a simple
-            vector to a binary search tree (BST), the enhancement significantly improved search performance across
-            both small and large datasets.
-        </p>
-
-        <ul>
-            <li><a href="enhancement-two/original/ProjectTwo_original.zip">Download Original Artifact</a></li>
-            <li><a href="enhancement-two/enhanced/ProjectTwo_enhanced.zip">Download Enhanced Artifact</a></li>
-            <li><a href="enhancement-two/narrative/Enhancement Two Narrative.docx">Download Narrative</a></li>
-        </ul>
-
-        <h3>Before and After Screenshots</h3>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
-            <div>
-                <h4 style="text-align:center;">Before: Vector Search</h4>
-                <img src="enhancement-two/images/Vector_Large2.png" alt="Vector Search Performance" style="max-width: 100%; width: 400px; border: 1px solid #ccc;">
-            </div>
-            <div>
-                <h4 style="text-align:center;">After: Binary Search Tree</h4>
-                <img src="enhancement-two/images/BST_Large2.png" alt="BST Search Performance" style="max-width: 100%; width: 400px; border: 1px solid #ccc;">
-            </div>
-        </div>
-    </section>
-
-    <!-- Enhancement Three -->
-    <section id="enhancement-three">
-        <h2>Enhancement Three: Databases</h2>
-        <p>
-            This enhancement builds upon my MongoDB-based animal shelter dashboard project originally developed in CS-340. 
-            I applied three key database-focused improvements: (1) adding <strong>indexes</strong> to optimize query speed, 
-            (2) using <strong>aggregation pipelines</strong> to extract and visualize data trends, and 
-            (3) implementing <strong>bulk insertion</strong> to improve data ingestion performance. 
-            These changes improved efficiency, analytical insight, and usability.
-        </p>
-
-        <ul>
-            <li><a href="enhancement-three/original/ProjectThree_original.zip">Download Original Artifact</a></li>
-            <li><a href="enhancement-three/enhanced/ProjectThree_enhanced.zip">Download Enhanced Artifact</a></li>
-            <li><a href="enhancement-three/narrative/Enhancement Three Narrative.docx">Download Narrative</a></li>
-        </ul>
-
-            <h3>Dashboard and Feature Enhancements</h3>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
-        <div>
-            <h4 style="text-align:center;">Disaster Tracking UI</h4>
-            <img src="enhancement-three/images/disastertracking.png" alt="Disaster Tracking Screenshot" style="max-width:100%; width:480px; border: 1px solid #ccc;">
-        </div>
-        <div>
-            <h4 style="text-align:center;">Aggregation Dashboard View</h4>
-            <img src="enhancement-three/images/After_Aggregation_Enhancement_Dashboard.png" alt="Aggregation Pipeline Dashboard" style="max-width:100%; width:480px; border: 1px solid #ccc;">
-        </div>
-        <div>
-            <h4 style="text-align:center;">After Index Optimization</h4>
-            <img src="enhancement-three/images/After_Index_Enhancement.png" alt="Index Enhancement Screenshot" style="max-width:100%; width:480px; border: 1px solid #ccc;">
-        </div>
-        <div>
-            <h4 style="text-align:center;">Bulk Insertion Process</h4>
-            <img src="enhancement-three/images/Bulk_Insertion_Enhancement.png" alt="Bulk Insertion Screenshot" style="max-width:100%; width:480px; border: 1px solid #ccc;">
-        </div>
-    </div>
-    </section>
-    
-</body>
-</html>
+  <nav>
+    <a href="#self-assessment">Self-Assessment</a>
+    <a href="#code-review">Code Review</a>
+    <a href="#enhancement-one">Enhancement 1</a>
+    <a href="#enhancement-two">Enhancement 2</a>
+    <a href="#enhancement-three">Enhancement 3</a>
+  </nav>
