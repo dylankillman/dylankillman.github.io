@@ -249,6 +249,23 @@
                 <img src="enhancement-two/images/BST_Large2.png" alt="BST Search Performance" style="max-width: 100%; width: 400px; border: 1px solid #ccc;">
             </div>
         </div>
+
+      <h3>Enhancement Narrative</h3>
+        <p>
+            The artifact that I selected for this category is my final project, the Course Planner program, from CS-300: Data Structures and Algorithms class, which was originally created in the spring of 2024. The program is relatively simple; it’s a command-line-driven course planner application written in C++. Users can load a list of courses from a .csv file, display the full list of courses in alphanumeric order, or search for specific details about any course, including any prerequisites required for that course. I’ve also added a feature that displays the time it took for any process to complete in microseconds. The original version of this program, which I submitted when I took CS-300, used a vector to store the course information and utilized the sort() function from the standard library to alphabetize the data every time it was requested.
+        </p>
+
+        <p>
+            I chose this artifact because it’s a relatively clean, simple, yet functional example of working with data structures. I figured the best artifact for the Data Structures and Algorithms category was the final project from the Data Structures and Algorithms class. I immediately thought of this artifact because I remember that back when I originally created the program, I purposely chose to use a vector because it was simpler to code, and I didn’t really have a fantastic grasp on data structures back then. This enhancement required completely overhauling the program, including designing and implementing a new CourseNode structure, coding recursive Binary Search Tree (BST) operations, and replacing all of the sorting and searching code with a BST-based traversal. Also, I added the timing functionality using the chrono library in order to showcase the performance difference between the vector and BST versions of the program. I believe these enhancements demonstrate my ability to employ algorithmic thinking, analyze performance differences, and assess and apply trade-offs between different concepts, specifically between various data structures. I also created a larger dataset with 1000 entries, instead of the original dataset's eight entries, so that the performance improvements could be measured and observed. With this, the BST provided a significant improvement in performance, showing that as the dataset gets larger, the algorithm becomes more efficient.
+        </p>
+
+        <p>
+            I originally planned to meet Course Outcome #3 (designing and evaluating computing solutions using algorithmic principles while managing trade-offs) and Course Outcome #4 (demonstrating techniques, skills, and tools in computing practices), and I believe that I fully met both of these. For Course Outcome #3, I analyzed the existing vector-based solution and saw that as the datasets get larger, the mechanism becomes slower and less efficient because of the very nature of vectors, and found a better solution to the problem. For Course Outcome #4, I applied data structure design principles and algorithms to create a functional BST-based program instead of an inefficient vector-based program, which demonstrates my understanding of tools and techniques to solve real-world computing problems.
+        </p>
+
+        <p>
+            During this enhancement, I improved my understanding of both algorithmic design and data structures. Even though the BST may be a little more complex and harder to implement and write code for, I think the advantages and trade-offs are worth it, especially when you start working with large datasets. One of the most educational parts of this enhancement was working through the process of implementing and measuring time. I had to choose microseconds because if the time were in seconds, the difference in performance wouldn’t be measurable. I learned that this strategy can and should be employed in almost everything I do that’s code-related. It’s very valuable to write something one way, test it, and then write it a different way and test it and measure the difference in order to select the most efficient thing. One challenge that I faced during this enhancement was the BST implementation itself. I was never really great with BSTs when I took the original class, so at first, this was a tall task for me and my current skills. Getting the search time down to O(log n) from O(n) seemed like a foreign language to me at first. And using insertion instead of push_back wasn’t something that I had a lot of practice with.
+        </p>
     </section>
 
     <!-- Enhancement Three -->
@@ -287,6 +304,23 @@
             <img src="enhancement-three/images/Bulk_Insertion_Enhancement.png" alt="Bulk Insertion Screenshot" style="max-width:100%; width:480px; border: 1px solid #ccc;">
         </div>
     </div>
+
+      <h3>Enhancement Narrative</h3>
+        <p>
+            The artifact that I selected for the Databases enhancement is a Python-based MongoDB dashboard that I created for my final project in the CS-340: Client/Server Development course. It was originally developed in a virtual Apporto environment and utilizes the Dash framework to give CRUD functionality and data visualization of data for a local animal shelter in Austin, Texas. It has a dashboard, geolocation maps, interactive charts, and radio button filters enabling the user to sort and view data based on desired criteria like breed, purpose, age, etc.. The original product had very basic CRUD functions but lacked efficiency.
+        </p>
+
+        <p>
+            I chose this artifact because I thought it fit perfectly within the Databases category, considering that MongoDB and CRUD operations are the entire focus of the artifact. It offered a good opportunity to demonstrate some practice database concepts. I think the enhancements I made really showed my ability to apply database solutions. The artifact was improved in several ways. First, I implemented indexing on key fields like animal type, breed, and age in order to reduce query execution times. Before applying indexing, queries would take a little longer to run, but with indexes applied, the same query (over 2,600 results) returned in 22 milliseconds. I also implemented an aggregation pipeline. I incorporated this into the overall dashboard product as well. I used MongoDB’s aggregation framework to group and count dog adoptions that were under two years of age by breed. I used this specific criterion, but this same concept can be applied to any desired combination of fields. Finally, I added a function for bulk insertions. I added an insert_many() method to allow the system to more efficiently insert large datasets, specifically from CSV files. I also created a mock bulk animals CSV file to demonstrate that data could be successfully inserted in bulk. All of these make the product more scalable, efficient, and practical.
+        </p>
+
+        <p>
+            I think these enhancements align well with Course Outcome #3 and Course Outcome #4. The indexing and aggregation features directly address product optimization, while the bulk insertion enhancement is vital for the scalability of the product and shows that I could implement an innovative technique to deliver value.
+        </p>
+
+        <p>
+            This artifact was by far the most difficult to enhance. However, I did learn a lot more about MongoDB’s tools and how it works. One of the challenges I faced was trying to verify that I could delete the records that were inserted in bulk. To do this, I ended up checking both Boolean and String “True” values and making sure I got a response that the number of records deleted matched the number of records that were originally added. The other huge challenge I faced was with the aggregation enhancement. I wanted to not only test it in its own cell (which I did), but I wanted to figure out a way to incorporate it into the overall dashboard product. I ended up creating its own radio button and working through the little kinks that came along. Overall, these enhancements made me a better developer and have increased my overall confidence in developing and optimizing products.
+        </p>
     </section>
     
 </body>
